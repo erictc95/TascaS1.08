@@ -1,4 +1,4 @@
-package level1.exercise1.lambdasnstreams;
+package level1.lambdasnstreams.exercise1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,16 +9,16 @@ public class LambdasNStreamsMain {
         List<String> words = new ArrayList<>();
 
         words.add("Door");
-        words.add("Papillon");
+        words.add("RUBISH");
         words.add("Technics");
-        words.add("Rubish");
+        words.add("PAPILLON");
         words.add("Carpenter");
 
         List<String> result = filterWordsWithO(words);
-        System.out.println(result);
+        System.out.println("Words with 'o': " + result);
     }
 
     public static List<String> filterWordsWithO(List<String> words) {
-        return words.stream().filter(word -> word.contains("o")).collect(Collectors.toList());
+        return words.stream().filter(word -> word.toLowerCase().contains("o")).collect(Collectors.toList());
     }
 }
