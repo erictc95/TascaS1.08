@@ -1,4 +1,4 @@
-package level2.manipulatefunctionaldata;
+package level2.manipulatefunctionaldata.exercise1;
 
 import java.util.ArrayList;
 import java.util.List;
