@@ -4,11 +4,11 @@
 
 ### 📂 Repository Contents
 
-| Level   | Exercise | Package                                    | Principal Classes            | Description                                                                              |
-|---------|----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------------------------|
-| Level 1 | 1        | `level1.lambdasnstreams.exercise1`         | `LambdasNStreamsMain`        | Create enum `Day` and enum `Level` and learn how to use in some exercises.               |
-| Level 1 | 2        | `level1.lambdasnstreams.exercise2`         | `LambdasNStreamsMain`        | Create `DateTimeUtils` and his different imports and learn how to use them.              |
-| Level 1 | 3        | `level1.lambdasnstreams.exercise3`         | `MonthsMain`                 | Create a record class and a traditional class to compare the difference of uses in java. |
+| Level   | Exercise | Package                                    | Principal Classes            | Description |
+|---------|----------|--------------------------------------------|------------------------------|-------------|
+| Level 1 | 1        | `level1.lambdasnstreams.exercise1`         | `LambdasNStreamsMain`        | Create      |
+| Level 1 | 2        | `level1.lambdasnstreams.exercise2`         | `LambdasNStreamsMain`        | Create      |
+| Level 1 | 3        | `level1.lambdasnstreams.exercise3`         | `MonthsMain`                 | Create      |
 | Level 1 | 4        | `level1.lambdasnstreams.exercise4`         | `MonthsMain`                 |
 | Level 1 | 5        | `level1.lambdasnstreams.exercise5`         | `FunctionalMain`, `PiValue`  |
 | Level 1 | 6        | `level1.lambdasnstreams.exercise6`         | `NamesStringMain`            |
