@@ -10,15 +10,18 @@ public class NameStringMain {
         List<String> films = new ArrayList<>();
 
         films.add("Now You See Me");
+        films.add("294512921825");
         films.add("The Mask");
         films.add("Toy Story");
         films.add("Psycho");
         films.add("007 James Bond: Die Another Day");
         films.add("Transformers");
+        films.add("2042");
 
         System.out.println(alphabeticalSort(films));
         System.out.println(sortByContainsEFirst(films));
         System.out.println(changeAFor4(films));
+        System.out.println(filterOnlyNumbers(films));
     }
 
     public static List<String> alphabeticalSort(List<String> films) {
@@ -38,5 +41,18 @@ public class NameStringMain {
 
     public static List<String> changeAFor4(List<String> films) {
         return films.stream().map(film -> film.replace('a', '4')).toList();
+    }
+
+    public static List<String> filterOnlyNumbers(List<String> films) {
+        return films.stream().filter(film -> {
+            if (film.isEmpty()) return false;
+
+            for (int i = 0; i < film.length(); i++) {
+                if(!Character.isDigit(film.charAt(i))) {
+                    return false;
+                }
+            }
+            return true;
+        }).toList();
     }
 }
