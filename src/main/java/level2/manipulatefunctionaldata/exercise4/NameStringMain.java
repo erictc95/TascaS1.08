@@ -18,6 +18,7 @@ public class NameStringMain {
 
         System.out.println(alphabeticalSort(films));
         System.out.println(sortByContainsEFirst(films));
+        System.out.println(changeAFor4(films));
     }
 
     public static List<String> alphabeticalSort(List<String> films) {
@@ -35,4 +36,7 @@ public class NameStringMain {
         }).toList();
     }
 
+    public static List<String> changeAFor4(List<String> films) {
+        return films.stream().map(film -> film.replace('a', '4')).toList();
+    }
 }
