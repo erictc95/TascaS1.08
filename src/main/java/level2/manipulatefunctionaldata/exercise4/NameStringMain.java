@@ -17,12 +17,22 @@ public class NameStringMain {
         films.add("Transformers");
 
         System.out.println(alphabeticalSort(films));
-
+        System.out.println(sortByContainsEFirst(films));
     }
 
     public static List<String> alphabeticalSort(List<String> films) {
         return films.stream().sorted(Comparator.comparing(film -> film.charAt(0))).collect(Collectors.toList());
     }
 
+    public static List<String> sortByContainsEFirst(List<String> films) {
+        return films.stream().sorted((a, b) -> {
+            boolean aContains = a.toLowerCase().contains("e");
+            boolean bContains = b.toLowerCase().contains("e");
+
+            if (aContains && !bContains) return -1;
+            if (!aContains && bContains) return 1;
+            return 0;
+        }).toList();
+    }
 
 }
