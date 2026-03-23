@@ -15,29 +15,8 @@ public class ListToStringMain {
         numbers.add(797);
         numbers.add(2026);
 
-        System.out.println(listToString(numbers));
-
-    }
-
-    public static String listToString(List<Integer> numbers) {
-        String result = "";
-        for (int i = 0; i < numbers.size(); i++) {
-            int number = numbers.get(i);
-            String prefix;
-
-            if (number % 2 == 0) {
-                prefix = "e";
-            } else {
-                prefix = "o";
-            }
-
-            result += prefix + number;
-
-            if (i < numbers.size() -1) {
-                result += ", ";
-            }
-        }
-        return result;
+        NumberService service = new NumberService();
+        System.out.println(service.listToString(numbers));
     }
 }
 

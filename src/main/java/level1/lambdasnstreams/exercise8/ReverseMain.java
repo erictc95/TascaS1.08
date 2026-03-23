@@ -1,18 +1,19 @@
 package level1.lambdasnstreams.exercise8;
 
 public class ReverseMain {
+    private static final String OBSERVE = "Calisto";
 
     public static void main(String[] args) {
 
-        String observe = "Supercalisto";
-        Reverse reverse = (ofTheLaw) -> {
-            String result = "";
-            for (int i = ofTheLaw.length() - 1; i >= 0; i--) {
-                result += ofTheLaw.charAt(i);
+
+        Reverse reverse = (text) -> {
+            StringBuilder result = new StringBuilder();
+            for (int i = text.length() - 1; i >= 0; i--) {
+                result.append(text.charAt(i));
             }
-            return result;
+            return result.toString();
         };
 
-        System.out.println(reverse.insideOut(observe));
+        System.out.println(reverse.reverse(OBSERVE));
     }
 }

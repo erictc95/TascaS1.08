@@ -16,11 +16,11 @@ public class NameStringMain {
         names.add("Elise");
         names.add("Mathieu Keller");
 
-        List<String> result = sortString(names);
+        StringService service = new StringService();
+        List<String> result = service.sortString(names);
+
         System.out.println(result);
     }
 
-    public static List<String> sortString(List<String> names) {
-        return names.stream().sorted(Comparator.comparing(String::length).reversed()).collect(Collectors.toList());
-    }
+
 }

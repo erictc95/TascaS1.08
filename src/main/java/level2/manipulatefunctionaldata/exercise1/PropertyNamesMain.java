@@ -15,11 +15,10 @@ public class PropertyNamesMain {
         propertyNames.add("And");
         propertyNames.add("Connor McDavid");
 
-        System.out.println(filterStringStartWithAAndLengthThree(propertyNames));
+        NameService service = new NameService();
+        System.out.println(service.filterStringStartWithAAndLengthThree(propertyNames));
     }
 
-    public static List<String> filterStringStartWithAAndLengthThree(List<String> propertyNames) {
-        return propertyNames.stream().filter(word -> word.startsWith("A") && word.length() == 3).collect(Collectors.toList());
-    }
+
 }
 
